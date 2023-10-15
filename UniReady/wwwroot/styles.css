@@ -1,0 +1,41 @@
+﻿body{
+    margin: 0 1px;
+}
+/* Navbar styles */
+.custom-navbar {
+    background: linear-gradient(90deg, rgba(67,170,128,0.9934567577030813) 0%, rgba(31,161,104,1) 41%, rgba(0,255,169,1) 66%, rgba(0,255,70,1) 93%);
+    color: #fff;
+    padding: 10px 0;
+}
+
+/* Navigation list styles */
+.nav-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* Navigation item styles */
+.nav-item {
+    margin: 0 20px;
+}
+
+/* Navigation link styles */
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+    .nav-link:hover {
+        text-decoration: underline;
+    }
+
+
+.post {
+    border: 3px double #1C6EA4;
+}
+.post-title{
+    text-align:center;
+}

@@ -1,0 +1,29 @@
+﻿@model IEnumerable<UniReady.Models.Posting>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>HELLO</h1>
+
+<form asp-action="Index" asp-controller="Home" method="get">
+    <p class="form-group">
+        Search: <input name="SearchString" class="form-control" /><br />
+        <button type="submit" class="btn btn-primary">Search</button>
+        <a asp-action="DetailedSearch" class="btn btn-success">Detailed Search</a>
+        <a asp-action="Index" class="btn btn-danger">Show All</a>
+    </p>
+</form>
+
+@foreach (var item in Model)
+    {
+        <div class="post">
+            <h1 class="post-title">@Html.DisplayFor(modelItem => item.Title) by @Html.DisplayFor(modelItem => item.Author)</h1>
+            <h3>Posted @Html.DisplayFor(modelItem => item.PostedDate),  @Html.DisplayFor(modelItem => item.Views) Views </h3>
+            <p>@Html.DisplayFor(modelItem => item.Summary)</p>
+            <h5>
+                @Html.ActionLink("Read More", "Details", new { id = item.PostingID })
+            </h5>
+        </div>
+        <br />
+}

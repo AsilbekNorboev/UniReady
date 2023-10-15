@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/styles.css" rel="stylesheet" />
+</head>
+<body>
+    <nav class="custom-navbar">
+        <ul class="nav-list">
+            <li class="nav-item">
+                <a asp-action="Index" asp-controller="Home" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a asp-action="About" asp-controller="Home" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+                <a asp-action="Contact" asp-controller="Home" class="nav-link">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <div class="container">
+        @RenderBody()
+    </div>
+    <script src="~/lib/jquery/jquery.min.js"></script>
+    <script src="~/lib/popper.js/umd/popper.min.js"></script>
+    <script src="~/lib/twitter-bootstrap/js/bootstrap.bundle.js"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
