@@ -1,13 +1,13 @@
 # UniReady
 
 Nuget Packages Needed:
-Microsoft.AspNetCore.Identity
-Microsoft.AspNetCore.Identity.UI
-Microsoft.AspNetCore.Identity.EntityFrameworkCore
-Microsoft.EntityFrameworkCore
-Microsoft.EntityFrameworkCore.Design
-Microsoft.EntityFrameworkCore.SqlServer
-Microsoft.VisualStudio.Web.CodeGeneration.Design
+- Microsoft.AspNetCore.Identity
+- Microsoft.AspNetCore.Identity.UI
+- Microsoft.AspNetCore.Identity.EntityFrameworkCore
+- Microsoft.EntityFrameworkCore
+- Microsoft.EntityFrameworkCore.Design
+- Microsoft.EntityFrameworkCore.SqlServer
+- Microsoft.VisualStudio.Web.CodeGeneration.Design
 
 
 #TODO LIST:
